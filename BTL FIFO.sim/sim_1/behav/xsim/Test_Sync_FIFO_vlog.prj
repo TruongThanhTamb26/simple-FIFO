@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../BTL FIFO.srcs/sources_1/imports/Verilog-Code-of-Synchronus-FIFO-Design-with-verilog-test-code-master/Syn_FIFO.v" \
+"../../../../BTL FIFO.srcs/sim_1/imports/Verilog-Code-of-Synchronus-FIFO-Design-with-verilog-test-code-master/Test_Syn_FIFO.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

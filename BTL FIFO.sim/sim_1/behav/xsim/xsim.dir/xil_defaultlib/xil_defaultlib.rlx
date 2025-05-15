@@ -1,0 +1,13 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/TKLL HDL/BTL FIFO/BTL FIFO.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/TKLL HDL/BTL FIFO/BTL FIFO.srcs/sim_1/imports/Verilog-Code-of-Synchronus-FIFO-Design-with-verilog-test-code-master/Test_Syn_FIFO.v,1683354204,verilog,,D:/TKLL HDL/BTL FIFO/BTL FIFO.srcs/sim_1/new/tb.v,,Test_Sync_FIFO,,,,,,,,
+D:/TKLL HDL/BTL FIFO/BTL FIFO.srcs/sim_1/new/FIFO_tb.v,1683639850,verilog,,,,FIFO_tb,,,,,,,,
+D:/TKLL HDL/BTL FIFO/BTL FIFO.srcs/sim_1/new/tb.v,1683624133,verilog,,,,tb,,,,,,,,
+D:/TKLL HDL/BTL FIFO/BTL FIFO.srcs/sources_1/imports/Verilog-Code-of-Synchronus-FIFO-Design-with-verilog-test-code-master/Syn_FIFO.v,1683337433,verilog,,D:/TKLL HDL/BTL FIFO/BTL FIFO.srcs/sim_1/imports/Verilog-Code-of-Synchronus-FIFO-Design-with-verilog-test-code-master/Test_Syn_FIFO.v,,Sync_FIFO,,,,,,,,
+D:/TKLL HDL/BTL FIFO/BTL FIFO.srcs/sources_1/new/FIFO.v,1683639807,verilog,,D:/TKLL HDL/BTL FIFO/BTL FIFO.srcs/sim_1/new/FIFO_tb.v,,FIFO,,,,,,,,
+D:/TKLL HDL/BTL FIFO/BTL FIFO.srcs/sources_1/new/FIFOFINAL.v,1683362497,verilog,,D:/TKLL HDL/BTL FIFO/BTL FIFO.srcs/sources_1/new/FIFOtest.v,,Bonus,,,,,,,,
+D:/TKLL HDL/BTL FIFO/BTL FIFO.srcs/sources_1/new/FIFOa.v,1683627198,verilog,,D:/TKLL HDL/BTL FIFO/BTL FIFO.srcs/sim_1/new/FIFO_tb.v,,FIFOa,,,,,,,,
+D:/TKLL HDL/BTL FIFO/BTL FIFO.srcs/sources_1/new/FIFOtest.v,1683623769,verilog,,D:/TKLL HDL/BTL FIFO/BTL FIFO.srcs/sim_1/new/tb.v,,FIFOtest,,,,,,,,

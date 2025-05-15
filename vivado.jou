@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May  9 17:53:53 2023
+# Process ID: 10632
+# Current directory: D:/TKLL HDL/BTL FIFO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5580 D:\TKLL HDL\BTL FIFO\BTL FIFO.xpr
+# Log file: D:/TKLL HDL/BTL FIFO/vivado.log
+# Journal file: D:/TKLL HDL/BTL FIFO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/TKLL HDL/BTL FIFO/BTL FIFO.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source FIFO_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FIFO [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source FIFO_tb.tcl
+close_sim
+launch_simulation
+source FIFO_tb.tcl
+close_sim

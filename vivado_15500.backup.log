@@ -1,0 +1,624 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon May  8 14:24:15 2023
+# Process ID: 15500
+# Current directory: D:/TKLL HDL/BTL FIFO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent300 D:\TKLL HDL\BTL FIFO\BTL FIFO.xpr
+# Log file: D:/TKLL HDL/BTL FIFO/vivado.log
+# Journal file: D:/TKLL HDL/BTL FIFO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/TKLL HDL/BTL FIFO/BTL FIFO.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/HDL/Vivado/2019.1/data/ip'.
+oopen_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 890.293 ; gain = 19.719uupdate_compile_order -fileset sources_1exit
+INFO: [Common 17-206] Exiting Vivado at Mon May  8 14:25:35 2023...
+ in 'D:/TKLL HDL/BTL FIFO/BTL FIFO.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIFO_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/TKLL HDL/BTL FIFO/BTL FIFO.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FIFO_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/TKLL HDL/BTL FIFO/BTL FIFO.srcs/sources_1/new/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/TKLL HDL/BTL FIFO/BTL FIFO.srcs/sim_1/new/FIFO_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/TKLL HDL/BTL FIFO/BTL FIFO.sim/sim_1/behav/xsim'
+"xelab -wto 0c27ca6525e6469f938b71600c511b80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FIFO_tb_behav xil_defaultlib.FIFO_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/HDL/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0c27ca6525e6469f938b71600c511b80 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FIFO_tb_behav xil_defaultlib.FIFO_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FIFO_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/TKLL -notrace
+couldn't read file "D:/TKLL": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon May  8 14:25:09 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 890.293 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/TKLL HDL/BTL FIFO/BTL FIFO.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FIFO_tb_behav -key {Behavioral:sim_1:Functional:FIFO_tb} -tclbatch {FIFO_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source FIFO_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Pushed 1
+Pushed 2
+Poped 1
+Pushed 1
+Pushed 2
+Pushed 3
+Pushed 4
+Pushed 5
+Pushed 6
+Pushed 7
+------FULL------
+------FULL------
+------FULL------
+------FULL------
+------FULL------
+------FULL------
+Poped 2
+Pushed 2
+Poped 1
+Poped 2
+Poped 3
+Poped 4
+Pushed 4
+Poped 5
+Pushed 5
+Poped 6
+Poped 7
+Poped 2
+Poped 4
+Poped 5
+---------EMPTY----
+---------EMPTY----
+---------EMPTY----
+---------EMPTY----
+---------EMPTY----
+---------EMPTY----
+Pushed 5
+Poped 5
+xsim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 890.293 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FIFO_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 890.293 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 890.293 ; gain = 0.000
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 14:26:53 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 14:26:53 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 14:31:05 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 14:31:06 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 14:32:18 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 14:32:18 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 14:37:08 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 14:37:09 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 14:39:51 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 14:39:51 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 14:43:46 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 14:43:46 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Mon May  8 14:50:11 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 12
+[Mon May  8 14:51:26 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 14:53:48 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 14:56:19 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 14:57:10 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 14:59:31 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 15:03:37 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1992.527 ; gain = 1092.527
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 15:07:47 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 15:07:48 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 15:21:21 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 15:21:21 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 15:27:58 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 15:27:58 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Mon May  8 15:30:51 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 15:35:54 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 15:35:54 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 15:37:54 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 15:37:54 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 15:40:27 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 15:40:27 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 15:43:02 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 15:43:02 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Mon May  8 15:48:02 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 15:50:59 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 15:50:59 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 15:52:54 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 15:52:54 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 15:57:22 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 15:57:22 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 16:00:12 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 16:00:12 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 16:02:13 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon May  8 16:07:06 2023] Launched synth_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/synth_1/runme.log
+[Mon May  8 16:07:06 2023] Launched impl_1...
+Run output will be captured here: D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/TKLL HDL/BTL FIFO/BTL FIFO.runs/impl_1/FIFO.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017B3FA1FA
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May  8 21:30:43 2023...
