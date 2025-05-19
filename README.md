@@ -1,6 +1,6 @@
-# Digital Logic Design Project: Development of an Electronic Lock System Using Password Authentication on FPGA Arty-Z7
+# Digital Logic Design Project: Development of a FIFO (First-In-First-Out) Buffer on FPGA Arty-Z7
 
-This project implements a synchronous FIFO buffer as part of an electronic lock system with password authentication, designed and tested using Xilinx Vivado.
+This project implements a synchronous FIFO buffer in Verilog HDL, designed and tested using Xilinx Vivado. The implementation includes both the FIFO core module and a testbench for verification.
 
 ## Project Structure
 
