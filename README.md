@@ -1,6 +1,6 @@
-# FIFO (First-In-First-Out) Buffer Implementation
+# Digital Logic Design Project: Development of an Electronic Lock System Using Password Authentication on FPGA Arty-Z7
 
-This project implements a synchronous FIFO buffer in Verilog HDL, designed and tested using Xilinx Vivado. The implementation includes both the FIFO core module and a testbench for verification.
+This project implements a synchronous FIFO buffer as part of an electronic lock system with password authentication, designed and tested using Xilinx Vivado.
 
 ## Project Structure
 
@@ -27,22 +27,27 @@ The project includes the following key files:
 The FIFO module implements:
 
 1. **Clock Management**:
+
    - Input clock divided by a counter to produce a slower operational clock (Fclk)
 
 2. **Status Management**:
+
    - Empty flag - set when count = 0
    - Full flag - set when count = 8 (buffer full)
 
 3. **Count Management**:
+
    - Tracks the number of elements in the FIFO
    - Increased on write, decreased on read
    - Maintained when both operations occur simultaneously
 
 4. **Read Operation**:
+
    - Activated by read_en when FIFO is not empty
    - Outputs data from the location pointed by read_ptr
 
 5. **Write Operation**:
+
    - Activated by write_en when FIFO is not full
    - Stores data at the location pointed by write_ptr
 
@@ -76,6 +81,7 @@ pop(data_variable);
 ## Known Issues
 
 There's a data width mismatch between the FIFO implementation and testbench:
+
 - `FIFO.v` uses 2-bit data ([1:0])
 - `FIFO_tb.v` uses 8-bit data ([7:0])
 
@@ -93,6 +99,7 @@ The design has been successfully synthesized and implemented on a Xilinx Zynq-70
 ## Simulation
 
 To run the simulation:
+
 1. Open the project in Vivado
 2. Launch the simulator with FIFO_tb as the target
 3. Run the simulation to view FIFO operations in the waveform viewer
